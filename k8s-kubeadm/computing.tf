@@ -7,7 +7,7 @@ resource "aws_instance" "master_node" {
   subnet_id = aws_subnet.mysubnet.id
   instance_type = "t2.medium"
   tags = {
-    Name = "master-${count + 1}"
+    Name = "master-${count.index + 1}"
   }
 }
 
@@ -20,6 +20,6 @@ resource "aws_instance" "worker_node" {
   subnet_id = aws_subnet.mysubnet.id
   instance_type = "t2.medium"
   tags = {
-    Name = "worker-${count + 1}"
+    Name = "worker-${count.index + 1}"
   }
 }
