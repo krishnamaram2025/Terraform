@@ -15,11 +15,11 @@ This project is intended to provision AWS infrastructure.
 # Execution Flow
 * Step 1: Clone the repository
 ```
-  git clone https://github.com/devopsmadeeasyorg/Terraform.git && cd Terraform
+  git clone https://github.com/krishnamaram2025/Terraform.git && cd Terraform/linux-cluster
 ```
 * Step 2: Customize config
 ```
-  vi config.json
+  vi config.tfvars
   centos us-east-1: ami-002070d43b0a4f171
   ubuntu us-east-1: ami-053b0d53c279acc90
 ```
