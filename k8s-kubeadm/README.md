@@ -19,13 +19,13 @@ This project is intended to provision AWS infrastructure.
 ```
 * Step 2: Customize config
 ```
-  vi config.tfvars
+  vi config.json
   centos us-east-1: ami-002070d43b0a4f171
   ubuntu us-east-1: ami-053b0d53c279acc90
 ```
 * Step 3: To initialize a terraform directory
 ```
   terraform init
-  terraform validate -var-file config.tfvars
-  terraform apply -var-file config.tfvars
+  terraform validate -var-file config.json
+  terraform apply -var-file config.json
 ```
