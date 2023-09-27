@@ -1,5 +1,5 @@
 # Title
-This project is intended to provision AWS infrastructure.
+This project is intended to provision infrastructure on AWS, Azure, GCP and VMware vSphere platforms.
 
 # Linux cluster
 ```
