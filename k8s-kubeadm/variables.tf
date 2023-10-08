@@ -10,6 +10,10 @@ variable "mypublickey"{
 type = string
 }
 
+variable "runner_count"{
+type = string
+}
+
 variable "master_count"{
 type = string
 }

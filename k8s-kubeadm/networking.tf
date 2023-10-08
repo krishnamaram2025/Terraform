@@ -5,7 +5,6 @@ resource "aws_vpc" "webappvpc" {
     tags = {
       "Name" = "dev-cluster"
     }
-
 }
 
 # Step 2
