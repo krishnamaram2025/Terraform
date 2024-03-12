@@ -15,7 +15,7 @@ export AWS_SECRET_ACCESS_KEY=""
 # Execution Flow
 * Step 1: Clone the repository
 ```
-git clone https://github.com/cloudstonesorg/terraform.git && cd terraform/aws
+git clone https://github.com/krishnamaram2025/Terraform.git && cd Terraform/aws
 ```
 * Step 2: Customize config
 ```

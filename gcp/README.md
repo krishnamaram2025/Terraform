@@ -6,7 +6,7 @@ Pre-Requisites
 ============================
 * Step 1: Download terraform utility
 ```
-https://www.terraform.io/downloads) -> unzip file -> terraform.exe
+https://www.terraform.io/downloads -> unzip file -> terraform.exe
 ```
 * Step 2: Edit the system environment variables
 ```
@@ -29,7 +29,7 @@ export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/gcp_cred.json
 
 * Step 1: clone repo
 ```
-git clone https://github.com/cloudstonesorg/terraform.git && cd terraform/gcp
+git clone https://github.com/krishnamaram2025/Terraform.git && cd Terraform/gcp
 ```
 * Step 2: Modify cluster config as per requirement in config.json
 ```
