@@ -50,8 +50,5 @@ terraform apply --var-file=config.json
 ```
 * Step 5: Connectivity
 ```
-login to bastionhost
-eval `ssh-agent` && ssh-add -k ~/.ssh/id_rsa && ssh -A gcp-user@PUBLIC_IP
-login to appserver
-ssh gcp-user@PRIVATE_IP
+ssh gcp-user@PUBLIC_IP
 ```
