@@ -5,7 +5,7 @@
     "mysshuser":"gcp-user",
     "centos_ami": "centos-cloud/centos-7",
     "ubuntu_ami": "debian-11-bullseye-v20220519",
-    "master_count": 0,
+    "master_count": 1,
     "worker_count": 0,
     "runner_count": 0,
     "jenkins_count": 0,
