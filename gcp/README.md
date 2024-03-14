@@ -51,4 +51,5 @@ terraform apply --var-file=config.json
 * Step 5: Connectivity
 ```
 ssh gcp-user@PUBLIC_IP
+sudo su -l
 ```
