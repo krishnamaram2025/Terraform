@@ -8,7 +8,7 @@ resource "google_compute_instance" "master_node" {
   boot_disk {
     initialize_params {
       // Disk size
-      size  = "15"
+      size  = "25"
       // Disk type               
       type  = "pd-ssd"
       // Image
@@ -36,7 +36,7 @@ resource "google_compute_instance" "worker_node" {
   boot_disk {
     initialize_params {
       // Disk size
-      size  = "15"
+      size  = "25"
       // Disk type               
       type  = "pd-ssd"
       // Image
@@ -65,7 +65,7 @@ resource "google_compute_instance" "runner_node" {
   boot_disk {
     initialize_params {
       // Disk size
-      size  = "10"
+      size  = "25"
       // Disk type               
       type  = "pd-ssd"
       // Image
@@ -94,7 +94,7 @@ resource "google_compute_instance" "jenkins_node" {
   boot_disk {
     initialize_params {
       // Disk size
-      size  = "10"
+      size  = "25"
       // Disk type               
       type  = "pd-ssd"
       // Image
@@ -123,7 +123,7 @@ resource "google_compute_instance" "mysql_node" {
   boot_disk {
     initialize_params {
       // Disk size
-      size  = "10"
+      size  = "25"
       // Disk type               
       type  = "pd-ssd"
       // Image
