@@ -117,7 +117,7 @@ metadata = {
 ######################### MySQL nodes ##############
 resource "google_compute_instance" "mysql_node" {
   count = var.mysql_count
-  name         = "runner-node-${count.index + 1}"
+  name         = "mysql-node-${count.index + 1}"
   machine_type = "e2-medium"
   zone         = "us-west2-a"
   boot_disk {
