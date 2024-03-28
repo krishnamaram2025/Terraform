@@ -1,0 +1,74 @@
+Directory structure
+modules
+        networking=> variables.tf networking.tf output.tf
+        security
+        instances
+main.tf=> import modules
+providers.tf
+backend.tf
+varaibles.tf
+output.tf
+config.json
+
+$terraform validate -var-file=config.json .
+$terrafor apply -var-file=config.json .
+$terrafor apply  -auto-approve -var-file=config.json .
+$terraform destroy -var-file=config.json .
+$terraform plan -out=path -var-file=config.json .
+$terraform apply path -var-file=config.json .
+
+
+
+
+
+$ls 
+variables.json variables.tf providers.tf resources.tf backend.tf
+$vi variables.json
+{
+"aws_access_key": "ssdsdsdsd",
+"aws_secret_key": "sadsflsf987ff"
+} 
+$vi variables.tf
+variable "aws_access_key"{
+type= "string"
+}
+variable "aws_secret_key"{
+type= "string"
+}
+
+$vi providers.tf
+provider "aws"{
+access_key= "aws_access_key",
+secret_key= "aws_secret_key"
+region= "aws_region"
+}
+}
+$vi backend.tf 
+terraform{
+backend "s3"{
+bucket= "terraformstatestorage"
+key= "backenddemo"
+}
+}
+
+
+
+
+
+resource "aws_instance" "webserver"{
+ami = "ami-lkdksjd8nds"
+instance_type= "t2.large"
+vpc_security_group_ids= ["${aws_security_group.websg.id}"]
+key_name= "jenkins"
+connection{
+type= "ssh"
+user= "ubuntu"
+private_key= "${file("./jenkins.pem")}"
+}
+provisioner "remote_exec"{
+inline=[
+"sudo apt-get update"
+"sudo apt-get install apache2 -y"
+]
+}
+}

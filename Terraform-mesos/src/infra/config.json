@@ -1,0 +1,22 @@
+
+{
+
+"myregion" : "us-east-1",
+
+"mykeypair" : "virginia",
+
+"myamiid" : "ami-0affd4508a5d2481b",
+
+"multi_az" : "false",
+
+"desired_azs_cnt" : "0",
+
+"enable_user_defined_ips" : "false",
+
+"appserver_pa_ips" : ["192.168.20.40:0"],
+
+"rds_mysql_db" : {
+  "recover" : "false",
+  "snapshot_names" : "rds-mysql-db-snp"
+}
+}

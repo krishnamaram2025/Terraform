@@ -1,0 +1,13 @@
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html
+https://aws.amazon.com/premiumsupport/knowledge-center/execute-user-data-ec2/
+https://cloudinit.readthedocs.io/en/latest/
+
+
+step 1: Create DynamoDB table
+tablename: terraform-lock
+primarykey : LockID
+
+step 2: create bucket
+
+
+step 3: create file
