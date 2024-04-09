@@ -3,12 +3,12 @@
 resource "google_compute_instance" "master_node" {
   count = var.master_count
   name         = "master-node-${count.index + 1}"
-  machine_type = "e2-medium"
+  machine_type = "e2-highcpu-8"
   zone         = "us-west2-a"
   boot_disk {
     initialize_params {
       // Disk size
-      size  = "25"
+      size  = "100"
       // Disk type               
       type  = "pd-ssd"
       // Image
